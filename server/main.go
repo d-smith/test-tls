@@ -18,7 +18,7 @@ func main() {
 
 	config := common.MustGetTlsConfiguration()
 
-	listener, err := tls.Listen("tcp", "localhost:51000", config)
+	listener, err := tls.Listen("tcp", ":51000", config)
 	if err != nil {
 		panic(err)
 	}

@@ -37,3 +37,11 @@ go run main.go ../openssl/client/okguy.key ../openssl/client/okguy.crt ../openss
 </pre>
 
 
+### Misc
+
+docker run --rm --name service --network foo server
+
+docker run -p 5000:5000 -v $PWD/rp.conf:/etc/nginx/nginx.conf -v /tmp/certs:/tmp/certs --network foo nginx
+
+go run main.go ../openssl/client/okguy.key ../openssl/client/okguy.crt ../openssl/ca/ca.crt
+

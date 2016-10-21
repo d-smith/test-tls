@@ -1,1 +1,3 @@
 openssl
+server/*.crt
+server/*.key
