@@ -1,7 +1,7 @@
 package main
 
 import "crypto/tls"
-import "github.com/hydrogen18/test-tls"
+import "github.com/d-smith/test-tls"
 import "fmt"
 import "net"
 
